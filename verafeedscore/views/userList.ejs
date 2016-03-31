@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ./partials/header %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+                  <h2>User List</h2>
+                  <ul>
+            <%
+             var count = userlist.length;
+
+             if (count != undefined) {
+                    for (var i = 0; i < count; i++) {  
+                        var user = userlist[i];
+                        %>
+                        <li><a href="mailto:<%=user.email%>"><%=user.username%></a></li> 
+                        <%
+                    }
+            }
+            %>
+  
+            </ul>
+
+        </div>
+    </main>
+
+    <footer>
+        <% include ./partials/footer %>
+    </footer>
+    
+</body>
+</html>

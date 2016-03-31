@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ./partials/header %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h2>HTTP error:</h2>
+            <h1><%=error.status%></h1>
+        </div>
+    </main>
+
+    <footer>
+        <% include ./partials/footer %>
+    </footer>
+    
+</body>
+</html>
+

@@ -1,0 +1,506 @@
+a {
+    /*	color: #0000FF;
+	font-size: 125%; */
+    
+    font-weight: bold;
+    font-family: verdana, arial, helvetica;
+}
+a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    cursor: pointer;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    BACKGROUND-COLOR: #FFF;
+    COLOR: black;
+    FONT-FAMILY: verdana, arial, helvetica;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    zoom: 90%;
+}
+td {
+    text-align: left;
+}
+@font-face {
+    font-family: Bebas Neue Regular;
+    src: url(fonts/bebas-neue/BebasNeueRegular.otf);
+}
+.alignright {
+    text-align: right;
+}
+.table {
+    border-style: solid;
+    border-width: 1px;
+}
+.tituloTabela {
+    font-family: Verdana;
+    font-size: 10pt;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.conteudoTabela {
+    font-family: Verdana;
+    font-size: 10pt;
+    color: #000000;
+    border-style: solid none none none;
+    border-width: 1px;
+}
+.logIn {
+    font-size: 15pt;
+    color: #000;
+    font-weight: bold;
+    opacity: 0.8;
+    font-family: Bebas Neue Regular;
+}
+.logIn:hover {
+    opacity: 0.7;
+}
+/* Title */
+
+.veraTitle {
+    font-size: 34pt;
+    color: #333333;
+    font-weight: bold;
+    font-family: Bebas Neue Regular;
+    text-align: center;
+    float: left;
+    height: 2vw !important;
+    color: white;
+}
+.veraTitle:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+.veraNavBar {
+    margin-top: 2.5vw !important;
+}
+/* Text */
+
+.veraText {
+    font-family: Bebas Neue Regular;
+}
+/* Container */
+
+.feedContainer {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15%;
+    display: inline-block;
+}
+#photos .feedContainer .feedButton {
+    position: absolute;
+    /*  margin-top:-10.5%;*/
+    
+    width: 10%;
+    height: auto;
+}
+#feedImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.feedImageText {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    font-size: 1.8vw;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    font-family: Bebas Neue Regular;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+.feedImageTitle {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5) !important;
+    width: 95% !important;
+    height: 30%;
+    position: absolute;
+    bottom: 0%;
+}
+.feedButtons {
+    width: 95% !important;
+    position: absolute;
+    left: 5%;
+    margin-top: 1%;
+}
+.feedSource {
+    float: left;
+    margin-top: 1%;
+    opacity: 0.5;
+    font-size: 1vw;
+    font-weight: lighter;
+    color: black;
+}
+.feedLink {
+    font-size: 1vw;
+    font-weight: lighter;
+    color: black;
+}
+.feedButton {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6) !important;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: inline-block;
+    opacity: 1;
+    padding: 5px 5px 4px;
+    text-decoration: none;
+    line-height: 90%;
+    font-size: 1.1vw;
+    text-align: center;
+}
+.trueButton {
+    right: 32.5%;
+    color: #00CC99;
+}
+.maybeButton {
+    right: 20%;
+    color: #0099FF;
+}
+.falseButton {
+    right: 7.5%;
+    color: #FF3366;
+}
+/* SLIDES */
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+/*html, body { background: #333 url("http://codepen.io/images/classy_fabric.png"); }*/
+
+.slides {
+    padding: 0;
+    width: 100%;
+    height: 680px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+.slides input {
+    display: none;
+}
+.slide-container {
+    display: block;
+}
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    /*   transform: scale(0);*/
+    
+    transition: all .7s ease-in-out;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+.nav label {
+    width: 100px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+.slide:hover + .nav label {
+    opacity: 0.5;
+}
+.nav label:hover {
+    opacity: 1;
+}
+.nav .next {
+    right: 0;
+}
+input:checked + .slide-container .slide {
+    opacity: 1;
+    /*  transform: scale(1);*/
+    
+    transition: opacity 1s ease-in-out;
+}
+input:checked + .slide-container .nav label {
+    display: block;
+}
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}
+.prev_next_margin_top {
+    margin-top: 150px;
+    font-size: 50pt;
+}
+/* SLIDES */
+/* Photos */
+
+#photos {
+    /* Prevent vertical gaps */
+    
+    line-height: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 3;
+    -moz-column-gap: 0px;
+    column-count: 3;
+    column-gap: 0px;
+}
+#photos img {
+    /* Just in case there are inline attributes */
+    
+    width: 95% !important;
+}
+/* Credit Box - Footer */
+
+.veraFooter {
+    background-color: #808080;
+}
+.veraFooter-follow {
+    background-color: #808080;
+    width: 1.5vw;
+}
+.veraFooter-contact {
+    background-color: #808080;
+    width: 1.5vw;
+}
+.veraFooter-text {
+    z-index: 100;
+    margin-top: 10%;
+    left: 0;
+    height: 5%;
+    width: 100%;
+    font-size: 18pt;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    font-family: Bebas Neue Regular;
+    cursor: pointer;
+}
+.icon_facebook {
+    float: left;
+    margin-left: 7.5%;
+    width: 25%;
+    height: 25%;
+    border: none;
+    display: inline-block;
+}
+#credit-box {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+#credit-box #credit-bottom {
+    bottom: -50px;
+    height: 73px;
+    padding: 0 3px 3px 0;
+    position: fixed;
+    right: 0px;
+    text-align: right;
+    z-index: 5000;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+#credit-box #credit-bottom a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold !important;
+    height: 21px;
+    line-height: 90%;
+    margin: 0 0 6px;
+    padding: 5px 5px 4px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    opacity: 0.7 !important;
+}
+#credit-box a {
+    text-decoration: none;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+    font-size: 10px;
+}
+#sides {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+#left {
+    float: left;
+    width: 49%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #B3B3B3;
+}
+#center {
+    float: left;
+    width: 2%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #FFF;
+}
+#right {
+    float: left;
+    width: 49%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+.icon_instagram {
+    float: left;
+    margin-left: 7.5%;
+    width: 25%;
+    height: 25%;
+    border: none;
+    display: inline-block;
+}
+.icon_cargo {
+    float: left;
+    margin-left: 7.5%;
+    width: 25%;
+    height: 25%;
+    border: none;
+    display: inline-block;
+}
+.icon_left {
+    width: 30%;
+    height: 30%;
+    border: none;
+    display: inline-block;
+}
+.icon_right {
+    width: 30%;
+    height: 30%;
+    border: none;
+    display: inline-block;
+}
+/* Media Queries */
+
+@media (min-width: 1200px) {} @media (max-width: 1200px) {
+    #photos {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+@media (max-width: 1000px) {
+    #photos {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+@media (max-width: 800px) {
+    #photos {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .feedImageText {
+        font-size: 3.5vw;
+    }
+    .feedButton {
+        font-size: 2.2vw;
+    }
+    .feedSource {
+        float: left;
+        margin-top: 1%;
+        opacity: 0.5;
+        font-size: 1.5vw;
+        font-weight: lighter;
+        color: black;
+    }
+    .feedLink {
+        font-size: 1.5vw;
+        font-weight: lighter;
+        color: black;
+    }
+}
+@media (max-width: 767px) {
+    .veraNavBar {
+        margin-top: 2.5vw !important;
+    }
+}
+@media (max-width: 400px) {
+    #photos {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .feedButton {
+        font-size: 2.2vw;
+    }
+    .feedImageText {
+        font-size: 3.5vw;
+    }
+    .feedSource {
+        float: left;
+        margin-top: 1%;
+        opacity: 0.5;
+        font-size: 2vw;
+        font-weight: lighter;
+        color: black;
+    }
+    .sourceLink {
+        font-size: 2vw;
+        font-weight: lighter;
+        color: black;
+    }
+}

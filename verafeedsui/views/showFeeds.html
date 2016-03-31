@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html ng-app="verafeedsApp">
+<head>
+    <% include ./partials/head %>
+</head>
+   <body ng-controller="veraFeedsCtrl">
+      <div class="devices-show">
+         <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+               <a href="lounge">
+                  <p class="veraTitle">VeraFeeds</p>
+               </a>
+               <button class="veraNavBar navbar-toggle" data-toggle ="collapse" data-target =".navHeaderCollapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <div class="collapse navbar-collapse navHeaderCollapse">
+                  <ul class="nav navbar-nav navbar-right veraText">
+                     <li class="active"><a href="#">FRESH</a></li>
+                     <li><a href="highlights">HIGHLIGHTS</a></li>
+                     <li><a href="filter">FILTER</a></li>
+                     <li><a href="stats">STATS</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container" style="width: 85%">
+		   <div>
+			<!--<p>{{ teste }}</p>-->
+		   </div>
+         <div class="row" style="height:40px"></div>
+         <section id="photos">
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2015/big/ng4442201.jpg?type=big" alt="Trueball"/>
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">KOMONO</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2015/big/ng4441979.jpg?type=big" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">Nude Mint w/ Nike</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2015/big/ng4441378.jpg?type=big" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">IBEYI - IBEYI</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <img class="feedImage"  src="http://www.ojogo.pt/storage/OJ/2015/big/ng4441891.JPG?type=big" alt="STrueball" />
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">Bucket days | Stussy</p>
+                  </a>
+               </div>
+               <div class="feedButtons">
+                  <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                  <a class="feedButton trueButton" href="#">T</a>
+                  <a class="feedButton falseButton" href="#">F</a>
+                  <a class="feedButton maybeButton" href="#">?</a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <!--img src="https://sequenciadeimagens.files.wordpress.com/2015/05/img-021.jpg?w=640&h=340" alt="Sequencia de Imagens"/-->
+               <img class="feedImage"  src="http://www.ojogo.pt/storage/OJ/2015/big/ng4441410.jpg?type=big" alt="Trueball" />
+               <div class="feedButtons">
+                  <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                  <a class="feedButton trueButton" href="#">T</a>
+                  <a class="feedButton falseButton" href="#">F</a>
+                  <a class="feedButton maybeButton" href="#">?</a>
+               </div>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">Bamboo w/ Asics</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2016/big/ng5846961.jpg?type=big" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">Old boy coming right back</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2016/big/ng5851781.jpg?type=big" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">Peru is for chickens</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2015/big/ng4439731.jpg?type=big" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">No second chances</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2015/big/ng4435480.jpg?type=big" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">We didn't came to play, we came to win</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.abola.pt/img/fotos/abola2015/BRAGA/danilo2.jpg" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">Let me ball, let me ball</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage"  src="http://www.ojogo.pt/storage/OJ/2015/big/ng4433001.jpg" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">Simply Sweet</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2015/big/ng4439756.jpg?type=big" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">L'ATLAS - TRANSVERSAL</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2015/big/ng4440837.jpg?type=big" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">Guardian of the galaxy</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2015/big/ng4436510.jpg?type=big" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">L'ATLAS - TRANSVERSAL</p>
+                  </a>
+               </div>
+            </div>
+            <div class="feedContainer">
+               <figure>
+                  <img class="feedImage" src="http://www.ojogo.pt/storage/OJ/2015/big/ng4439603.jpg?type=big" alt="Trueball" />
+                  <figcaption>
+                     <div class="feedButtons">
+                        <p class="feedSource">source: <a class="feedLink" href="http://www.ojogo.pt" target="_blank">ojogo.pt</a></p>
+                        <a class="feedButton trueButton" href="#">T</a>
+                        <a class="feedButton falseButton" href="#">F</a>
+                        <a class="feedButton maybeButton" href="#">?</a>
+                     </div>
+                  </figcaption>
+               </figure>
+               <div class="feedImageTitle">
+                  <a href="#">
+                     <p class="feedImageText">Solving problems</p>
+                  </a>
+               </div>
+            </div>
+         </section>
+      </div>
+      <div class="row" style="height:100px">
+      </div>
+      <div class="row veraFooter" style="height:125px">
+         <div id="sides" style="width: 300px; margin-left: auto; margin-right: auto;">
+            <div id="right" class="veraFooter-follow" style="background-color: #808080">
+               <div style="height: 40%;">
+                  <p class="veraFooter-text" >FOLLOW US</p>
+               </div>
+               <div style="height: 60%;">
+               </div>
+            </div>
+            <div id="left" class="veraFooter-contact" style="background-color: #808080">
+               <div style="height: 40%;">
+                  <p class="veraFooter-text">CONTACT</p>
+               </div>
+               <div style="height: 60%;">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" style="height:40px">
+      </div>
+      <div id="credit-box">
+         <div id="credit-bottom">
+            <table>
+               <tr>
+                  <td><a href="help" title="Help">Help</a></td>
+                  <td><a href="terms" title="Terms and Conditions">Terms and Conditions</a></td>
+                  <td><a href="privacy" title="Privacy Police">Privacy Policy</a></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </body>
+</html>
